@@ -50,15 +50,26 @@ class="flex   items-center h-20 rounded-xl
         
 </motion.div>
 
-<div class="h-screen flex items-center">
-<div class="text-center ">
+<motion.div class="mx-auto relative mt-11 flex items-center  "
+  initial={{ y: 200 }} 
+  animate={{ y: 100 }}
+  transition={{ duration: 1 }} >
+<div class="text-center display: block  text-white  ">
 
-    <h1 class="text-7xl font-extrabold">
+    <h1 class="text-7xl text-center font-extrabold">
         Smart Drives Automation 
     </h1>
     <p class="font-light text-3xl mt-5 "> We Are Service providers For Industrues </p>
+    <p class="font-extralight text-xl mt-10  ">
+        Smart Drives Automation (SDA) is a partnership firm founded and incorporated in 2018.SDA 
+started it’s operations as a sales and services support provider to leading multi-national vendors 
+in the arena of LV. </p>
+<p class="font-extralight text-xl mt-10  ">
+Switchgears, industrial automation for programmable logic controllers (PLC), 
+SCADA, HMI & drive and embedded systems with a special focus on robotics integration and 
+Energy Management. </p>
 </div>
-</div>
+</motion.div>
 </section>
 <section class="bg-black min-h-screen" ></section>
 </div>
