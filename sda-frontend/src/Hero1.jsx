@@ -8,6 +8,7 @@ import img1 from  './assets/splc.jpg'
 export default function Hero1(){
     const videourl="https://www.se.com/in/en/assets/380/video/199675/Header_Montage.mp4";
     return(
+        
         <div >
 <section class="flex  flex-col min-h-screen "   >
 <video autoPlay loop muted className="absolute w-full height-50%  opacity-20 object-cover  min-h-screen">
