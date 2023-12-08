@@ -6,15 +6,18 @@ import { motion } from "framer-motion";
 import sdaLogo  from './assets/sdalogo.svg'
 import {  useScroll } from "framer-motion"
 import NavBar from './NavBar';
+import ScrollAnim from './ScrollAnim';
 import img1 from  './assets/splc.jpg'
+import zIndex from '@mui/material/styles/zIndex';
 export default function Hero1(){
     const videourl="https://www.se.com/in/en/assets/380/video/199675/Header_Montage.mp4";
     const { scrollYProgress } = useScroll();
+    
     return(
         
         <div >
-<section class="flex  flex-col min-h-screen "   >
-<video autoPlay loop muted className="absolute w-full height-40%  opacity-20 object-cover  h-screen">
+<section class=" flex  flex-col min-h-screen "   >
+<video autoPlay loop muted className="absolute w-full height-40%  opacity-20 z-0 object-cover  h-screen">
           <source src={videourl} type="video/mp4" />
         </video>
 <NavBar/>
@@ -23,9 +26,10 @@ export default function Hero1(){
   initial={{ y: 500 }} 
   animate={{ y: 100 }}
   transition={{ duration: 2 }} >
+
 <div class="text-center display: block  text-white  ">
 
-    <h1 class="text-7xl text-center font-extrabold">
+    <h1 class="text-7xl text-center font-extrabold ">
         Smart Drives Automation 
     </h1>
     <p class="font-light text-3xl mt-5 "> We Are Service providers For Industrues </p>
@@ -39,10 +43,16 @@ SCADA, HMI & drive and embedded systems with a special focus on robotics integra
 Energy Management. </p>
 </div>
 </motion.div>
+<div class=" display: block h-7 m-auto items-center ">
+        
+    <ScrollAnim/>
+</div>
 </section>
+
+
 <section class="bg-black min-h-screen" >
 
-    
+
 </section>
 </div>
 );

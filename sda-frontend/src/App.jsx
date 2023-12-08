@@ -9,7 +9,8 @@ import { Container, Typography } from '@mui/material'
 import Hero1 from './Hero1'
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import { useReducer } from 'react'
- const serviceList=["service1","service2","service3"];
+import ScrollAnim from './ScrollAnim'
+const serviceList=["service1","service2","service3"];
 function App() {
   
   
@@ -29,8 +30,7 @@ function App() {
   return (
   //<Hero logo={sdaLogo}/>
   < body>
-    
-   <Hero1/>
+    <Hero1/>
     </body>
   )
 }
