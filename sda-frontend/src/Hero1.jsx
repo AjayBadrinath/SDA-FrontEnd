@@ -14,15 +14,15 @@ export default function Hero1(){
         
         <div >
 <section class="flex  flex-col min-h-screen "   >
-<video autoPlay loop muted className="absolute w-full height-50%  opacity-20 object-cover  min-h-screen">
+<video autoPlay loop muted className="absolute w-full height-40%  opacity-20 object-cover  h-screen">
           <source src={videourl} type="video/mp4" />
         </video>
 <NavBar/>
 
 <motion.div class="mx-auto relative mt-11 flex items-center  "
-  initial={{ y: 200 }} 
+  initial={{ y: 500 }} 
   animate={{ y: 100 }}
-  transition={{ duration: 1 }} >
+  transition={{ duration: 2 }} >
 <div class="text-center display: block  text-white  ">
 
     <h1 class="text-7xl text-center font-extrabold">
@@ -40,7 +40,10 @@ Energy Management. </p>
 </div>
 </motion.div>
 </section>
-<section class="bg-black min-h-screen" ></section>
+<section class="bg-black min-h-screen" >
+
+    
+</section>
 </div>
 );
 }
