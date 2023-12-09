@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+* {
     cursor: none;
+    user-select: none;
+    -webkit-user-select: none;
+    
   }
+ 
   
-  body::before {
+  .d1::before {
     content: "";
     display: block;
     position: absolute;
@@ -18,6 +22,6 @@ body {
     background: rgb(179, 205, 34);
     transform: translate(-50%, -50%);
     pointer-events: none;
-    z-index: 10000;
+    z-index: 0;
+    
   }
-  

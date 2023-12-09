@@ -7,7 +7,7 @@ export default function ScrollAnim() {
     <div class='h-10 w-10  mt-11 flex items-center'>
    
    
-    <Lottie animationData={ScrollAnimation} loop={true}/>
+    <Lottie animationData={ScrollAnimation}  loop={true}/>
     </div>
   )
 }

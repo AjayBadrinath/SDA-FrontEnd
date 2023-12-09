@@ -9,51 +9,97 @@ import NavBar from './NavBar';
 import ScrollAnim from './ScrollAnim';
 import img1 from  './assets/splc.jpg'
 import zIndex from '@mui/material/styles/zIndex';
+
 export default function Hero1(){
+
+
     const videourl="https://www.se.com/in/en/assets/380/video/199675/Header_Montage.mp4";
     const { scrollYProgress } = useScroll();
-    
+    const text="We Are Service providers For Industries".split(" ");
+    const text2="Smart Drives Automation (SDA) is a partnership firm founded and incorporated in 2018.SDA     started it’s operations as a sales and services support provider to leading multi-national vendors  in the arena of LV.".split(" ");
+    const text3='LV Switchgears, Industrial automation ( SCADA, HMI & VFD ) with a special focus on robotics integration and  Energy Management.'.split(" ");
     return(
         
-        <div >
-<section class=" flex  flex-col min-h-screen "   >
-<video autoPlay loop muted className="absolute w-full height-40%  opacity-20 z-0 object-cover  h-screen">
-          <source src={videourl} type="video/mp4" />
-        </video>
-<NavBar/>
+        <div className=' h-screen '>
+           
+<section class=" flex  h-screen  flex-col z-0 " 
+   >
 
-<motion.div class="mx-auto relative mt-11 flex items-center  "
+        
+<motion.div class="mx-auto relative mt-0 flex items-center  "
   initial={{ y: 500 }} 
   animate={{ y: 100 }}
   transition={{ duration: 2 }} >
 
-<div class="text-center display: block  text-white  ">
+<div class="text-center display: block  text-white z-0  ">
 
-    <h1 class="text-7xl text-center font-extrabold ">
+    <h1 class="text-7xl text-center font-extrabold z-0  ">
         Smart Drives Automation 
     </h1>
-    <p class="font-light text-3xl mt-5 "> We Are Service providers For Industrues </p>
-    <p class="font-extralight text-xl mt-10  ">
-        Smart Drives Automation (SDA) is a partnership firm founded and incorporated in 2018.SDA 
-started it’s operations as a sales and services support provider to leading multi-national vendors 
-in the arena of LV. </p>
-<p class="font-extralight text-xl mt-10  ">
-Switchgears, industrial automation for programmable logic controllers (PLC), 
-SCADA, HMI & drive and embedded systems with a special focus on robotics integration and 
-Energy Management. </p>
+    <p class="font-mono text-3xl mt-5 ">
+        {
+            text.map((a,b)=>(
+                <motion.span
+                initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 2,
+            delay: b / 10
+          }}
+          key={b}>
+            {a}{" "}
+          </motion.span>
+            ))
+        }
+    </p>
+    <p class="font-mono text-xl mt-10 z-0  ">
+    {
+            text2.map((a,b)=>(
+                <motion.span
+                initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 2,
+            delay: b / 10
+          }}
+          key={b}>
+            {a}{" "}
+          </motion.span>
+            ))
+        }
+        
+         </p>
+<p class="font-mono text-xl mt-10 z-0  ">
+{
+            text3.map((a,b)=>(
+                <motion.span
+                initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 2,
+            delay: b / 10
+          }}
+          key={b}>
+            {a}{" "}
+          </motion.span>
+            ))
+        }
+
+</p>
+
+
 </div>
 </motion.div>
 <div class=" display: block h-7 m-auto items-center ">
         
-    <ScrollAnim/>
+    <button  ><ScrollAnim/></button>
 </div>
 </section>
 
 
-<section class="bg-black min-h-screen" >
 
 
-</section>
+
 </div>
 );
 }
