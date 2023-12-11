@@ -28,7 +28,8 @@ function App() {
   
   
        
-   <NavBar/>
+ 
+<NavBar/>
    <MainMarquee/>
    <Hero1/>
    
@@ -52,6 +53,7 @@ function App() {
     </div>
     
     
+   
    
   )
 }

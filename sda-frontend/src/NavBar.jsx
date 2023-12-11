@@ -20,7 +20,7 @@ export default function NavBar() {
 
   const menu=(
     <div class="w-full  sm:w-auto flex items-end  a h-20 ">
-        <nav class ="text-black flex gap-5 absolute right-5 -translate-y-7 -translate-x--10 ">
+        <nav class ="text-white flex gap-5 absolute right-5 -translate-y-7 -translate-x--10 ">
             <a class="font-mono block py-2 px-3 text-white-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href="#">About Us</a>
             <a class="font-mono block py-2 px-3 text-white-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href="#">Product </a>
             <a class="font-mono block py-2 px-3 text-white-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href="#">Verticals</a>
@@ -32,7 +32,7 @@ export default function NavBar() {
       
     <motion.div 
     
-class="flex flex-wrap ml-10 mr-10 mt-3 bg-slate-300 items-center h-20 z-100 rounded-3xl  shadow-[0_0_30px_aqua]
+class="flex flex-wrap ml-10 mr-10 mt-3 bg-slate-800 items-center h-20 z-100 rounded-3xl  shadow-[0_0_30px_aqua]
  sticky top-0 opacity-30  p-0"
  
  initial={{y:500}}
@@ -55,7 +55,7 @@ class="flex flex-wrap ml-10 mr-10 mt-3 bg-slate-300 items-center h-20 z-100 roun
 </div>
    <motion.div class="   mx-auto relative px-5 max-w-xl w-full">
         
-        <div class=" sm:text-sm md:text-xl lg:text-xl font-thin ml-10  whitespace-nowrap uppercase text-black absolute left-10 top-1/2 -translate-x-1 -translate-y-1/2">
+        <div class=" sm:text-sm md:text-xl lg:text-xl font-thin ml-10  whitespace-nowrap uppercase text-white absolute left-10 top-1/2 -translate-x-1 -translate-y-1/2">
         <h3 class="font-mono m-auto">
             Smart Drives Automation
             </h3>
