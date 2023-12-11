@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+	background: darkorchid;
+}
+/*
+
 body {
   background: linear-gradient(-45deg, #eb5018, #f21067, #4816e0, #c3d523);
 	background-size: 400% 400%;
@@ -20,3 +25,4 @@ body {
 		background-position: 0% 50%;
 	}
 }
+*/

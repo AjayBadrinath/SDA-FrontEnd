@@ -16,6 +16,7 @@ import material from './assets/material.png';
 import process from './assets/Picture5.png'
 import { SectionContext } from './SectionContext';
 import { useContext } from 'react';
+import SpeedDialFn from './SpeedDialFn';
 export default function Hero1(){
 
 
@@ -128,6 +129,7 @@ const scrollToNextSection = () => {
         
     <button onClick={scrollToNextSection} ><ScrollAnim/></button>
 </div>
+<SpeedDialFn/>
 </section>
 
 </div>

@@ -15,6 +15,7 @@ const serviceList=["service1","service2","service3"];
 import CarouselImg from './CarouselImg'
 import MainMarquee from './MainMarquee'
 import { SectionContext } from './SectionContext'
+import SpeedDialFn from './SpeedDialFn'
 function App() {
   
    const se2=useRef(null);
@@ -30,6 +31,7 @@ function App() {
    <NavBar/>
    <MainMarquee/>
    <Hero1/>
+   
    <div className=' h-screen '>
       
    <section ref={se2} class="bg-black flex   h-screen z-100 " >
@@ -48,6 +50,7 @@ function App() {
    </div>
    
     </div>
+    
     
    
   )
