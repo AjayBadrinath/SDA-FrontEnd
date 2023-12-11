@@ -12,42 +12,31 @@ import { useReducer } from 'react'
 import ScrollAnim from './ScrollAnim'
 import PanelAnim from './PanelAnim'
 const serviceList=["service1","service2","service3"];
+import CarouselImg from './CarouselImg'
+import MainMarquee from './MainMarquee'
+import { SectionContext } from './SectionContext'
 function App() {
   
-  const videourl="https://www.se.com/in/en/assets/380/video/199675/Header_Montage.mp4";
-  useEffect(() => {
-    const move = e => {
-      const mouseelem=document.querySelector('.d1');
-      mouseelem.style.setProperty('--mouse-x', e.clientX);
-      mouseelem.style.setProperty('--mouse-y', e.clientY);
-      
-    };
-    document.addEventListener("mousemove", move);
-    return () => {
-      document.removeEventListener("mousemove", move);
-    };
-    
-  }, []);
-
+   const se2=useRef(null);
   
   return (
   //<Hero logo={sdaLogo}/>
+  
   <div className ='d1 z-100'>
  < div className='  flex  flex-col  w-full z-100'>
   
-  <video autoPlay loop muted className="absolute  w-full opacity-20 z-0 object-cover  h-screen">
-         <source src={videourl} type="video/mp4" />
-       </video>
-   
+  
        
-       <NavBar/>  
-
+   <NavBar/>
+   <MainMarquee/>
    <Hero1/>
    <div className=' h-screen '>
-   <section class="bg-black flex   h-screen z-100 " >
-
-
+      
+   <section ref={se2} class="bg-black flex   h-screen z-100 " >
+   <SectionContext.Provider value={se2}>
+   </SectionContext.Provider>
 </section>
+
 </div>
 <div className=' h-screen '>
    <section class="bg-green flex   h-screen z-100 " >
@@ -59,6 +48,8 @@ function App() {
    </div>
    
     </div>
+    
+   
   )
 }
 

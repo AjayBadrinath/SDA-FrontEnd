@@ -9,7 +9,13 @@ import NavBar from './NavBar';
 import ScrollAnim from './ScrollAnim';
 import img1 from  './assets/splc.jpg'
 import zIndex from '@mui/material/styles/zIndex';
-
+import CarouselImg from './CarouselImg'
+import automation from './assets/automation.png';
+import Fb from './assets/F&b.png'
+import material from './assets/material.png';
+import process from './assets/Picture5.png'
+import { SectionContext } from './SectionContext';
+import { useContext } from 'react';
 export default function Hero1(){
 
 
@@ -18,22 +24,40 @@ export default function Hero1(){
     const text="We Are Service providers For Industries".split(" ");
     const text2="Smart Drives Automation (SDA) is a partnership firm founded and incorporated in 2018.SDA     started it’s operations as a sales and services support provider to leading multi-national vendors  in the arena of LV.".split(" ");
     const text3='LV Switchgears, Industrial automation ( SCADA, HMI & VFD ) with a special focus on robotics integration and  Energy Management.'.split(" ");
+    const img=[{img:automation,
+              h3text:"First slide label",
+              ptext:"Nulla vitae elit libero, a pharetra augue mollis interdum."
+    },{img:Fb,
+    h3text:"First slide label",
+    ptext:"Nulla vitae elit libero, a pharetra augue mollis interdum."
+},{img:process,
+h3text:"First slide label",
+ptext:"Nulla vitae elit libero, a pharetra augue mollis interdum."
+},{img:material,
+h3text:"First slide label",
+ptext:"Nulla vitae elit libero, a pharetra augue mollis interdum."
+}]
+const se2 = useContext(SectionContext);
+
+const scrollToNextSection = () => {
+  se2.current.scrollIntoView({ behavior: 'smooth' });
+};
     return(
         
-        <div className=' h-screen '>
-           
+       
+        <div className=' h-screen  '>
+                
 <section class=" flex  h-screen  flex-col z-0 " 
    >
-
-        
-<motion.div class="mx-auto relative mt-0 flex items-center  "
+<div class="p-0  grid lg:grid-cols-2 gap-2 grid-cols-1 ">
+<motion.div class=" lg:w-full sm:w-1/2  shadow-[0_0_30px_aqua] rounded-3xl rounded-r-4xl ml-10 mt-0  relative  flex items-center  "
   initial={{ y: 500 }} 
   animate={{ y: 100 }}
   transition={{ duration: 2 }} >
 
-<div class="text-center display: block  text-white z-0  ">
+<div class="text-center display: block  text-white z-0 p-5  ">
 
-    <h1 class="text-7xl text-center font-extrabold z-0  ">
+    <h1 class="text-2xl sm:text-7xl text-center font-extrabold z-0  ">
         Smart Drives Automation 
     </h1>
     <p class="font-mono text-3xl mt-5 ">
@@ -90,16 +114,26 @@ export default function Hero1(){
 
 </div>
 </motion.div>
-<div class=" display: block h-7 m-auto items-center ">
+<motion.div class="p-2 w-3/4  shadow-[0_0_30px_aqua] z-100 rounded-3xl  mx-auto  relative mt-0 flex items-center  "
+  initial={{ y: 500 }} 
+  animate={{ y: 100 }}
+  transition={{ duration: 2 }} >
+
+<CarouselImg img={img}/>
+</motion.div>
+
+</div>
+
+<div class=" flex  justify-center h-7 m-auto  items-center ">
         
-    <button  ><ScrollAnim/></button>
+    <button onClick={scrollToNextSection} ><ScrollAnim/></button>
 </div>
 </section>
 
-
-
-
-
 </div>
+
+
+
+
 );
 }
