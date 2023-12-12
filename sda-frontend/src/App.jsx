@@ -37,6 +37,7 @@ function App() {
    <div className=' h-screen '>
       
    <section ref={se2} className=" z-0 h-screen flex  justify-center bg-black" >
+      
       <div class="p-0 h-screen  flex gap-4  ">
 <motion.div class=" lg:w-1/3 sm:w-1/2  shadow-[0_0_50px_red] rounded-3xl rounded-r-4xl ml-10 mt-0  m-auto   flex items-center  "
   initial={{ y: 500 }} 
