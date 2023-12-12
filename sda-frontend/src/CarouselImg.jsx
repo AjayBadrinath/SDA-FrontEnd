@@ -22,8 +22,8 @@ ptext:"Nulla vitae elit libero, a pharetra augue mollis interdum."
       
           <img src={a.img} alt="" />
         <Carousel.Caption>
-          <h3>{a.h3text}</h3>
-          <p>{a.ptext}</p>
+          <h3 className=' font-mono text-xl'>{a.h3text}</h3>
+          <p className='  font-mono text-sm'>{a.ptext}</p>
         </Carousel.Caption>
       </Carousel.Item>
       ))}

@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body{
-	background: darkorchid;
+	background: rgb(53, 204, 50);
 }
 /*
 
