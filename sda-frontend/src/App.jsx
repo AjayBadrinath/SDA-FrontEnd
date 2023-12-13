@@ -17,10 +17,11 @@ import CarouselImg from './CarouselImg'
 import MainMarquee from './MainMarquee'
 import { SectionContext } from './SectionContext'
 import SpeedDialFn from './SpeedDialFn'
+import VFD from './VFD'
 function App() {
   
    const se2=useRef(null);
-  
+  /*
   return (
   //<Hero logo={sdaLogo}/>
   
@@ -28,23 +29,25 @@ function App() {
  < div className='  flex  flex-col  w-full z-100 '  >
   
   
-       
+ 
  
 <NavBar/>
+
    <MainMarquee/>
+
    <Hero1/>
    
    <div className=' h-screen '>
       
    <section ref={se2} className=" z-0 h-screen flex  justify-center bg-black" >
       
-      <div class="p-0 h-screen  flex gap-4  ">
+      <div class="p-0 h-screen bg-green-300	 flex gap-4  ">
 <motion.div class=" lg:w-1/3 sm:w-1/2  shadow-[0_0_50px_red] rounded-3xl rounded-r-4xl ml-10 mt-0  m-auto   flex items-center  "
   initial={{ y: 500 }} 
   animate={{ y: 100 }}
   transition={{ duration: 2 }} >
 
-<div class="text-center display: block  text-white	 z-0 p-2  ">
+<div class="text-center display: block  text-black	 z-0 p-2  ">
 
 <h1 class="text-xl sm:text-xl text-center font-extrabold z-0  ">
         Our Goal
@@ -63,7 +66,7 @@ most complete solution to their utmost satisfaction.
   animate={{ y: 100 }}
   transition={{ duration: 2 }} >
 
-<div class="text-center display: block  text-white	 z-0 p-2  ">
+<div class="text-center display: block  text-black	 z-0 p-2  ">
 
 <h1 class="text-xl sm:text-xl text-center font-extrabold z-0  ">
         Our Values
@@ -83,7 +86,7 @@ throughout.
   animate={{ y: 100 }}
   transition={{ duration: 2 }} >
 
-<div class="text-center display: block  text-white	 z-0 p-2  ">
+<div class="text-center display: block  text-black	 z-0 p-2  ">
 
 <h1 class="text-xl sm:text-xl text-center font-extrabold z-0  ">
         Why SDA?
@@ -127,6 +130,13 @@ essence of this is the following:
     
    
    
+  )*/
+  return(
+   <>
+   <NavBar/>
+
+   <VFD/>
+   </>
   )
 }
 

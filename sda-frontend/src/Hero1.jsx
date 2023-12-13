@@ -17,6 +17,8 @@ import process from './assets/Process.png'
 import { SectionContext } from './SectionContext';
 import { useContext } from 'react';
 import SpeedDialFn from './SpeedDialFn';
+import video from './assets/Eldon.mp4'
+
 export default function Hero1(){
 
 
@@ -47,9 +49,12 @@ const scrollToNextSection = () => {
         
        
         <div className=' h-screen  ' >
-                
+              
 <section class=" flex  h-screen  flex-col z-0 " 
    >
+    <video autoPlay loop muted className="absolute w-screen h-screen z-100 opacity-40 object-cover  ">
+          <source src={video} type="video/mp4" />
+        </video>
 <div class="p-0  grid lg:grid-cols-2 gap-2 grid-cols-1 ">
 <motion.div class=" lg:w-full sm:w-1/2  shadow-[0_0_30px_aqua] rounded-3xl rounded-r-4xl ml-10 mt-0  relative  flex items-center  "
   initial={{ y: 500 }} 

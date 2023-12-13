@@ -5,7 +5,7 @@ import sdaLogo  from './assets/sdalogo.svg'
 import {useMediaQuery} from 'react-responsive'
 import {FaBars} from 'react-icons/fa'
 import { Ripple, initTE } from "tw-elements";
-
+import { Dropdown } from 'flowbite-react';
 export default function NavBar() {
   const [Open,setOpen]=useState(false)
   
@@ -19,13 +19,25 @@ export default function NavBar() {
 
 
   const menu=(
-    <div class="w-full   sm:w-auto flex items-end  a h-20 ">
-        <nav class ="text-white flex gap-5 absolute right-5 -translate-y-7 -translate-x--10 ">
-            <a class="font-mono block py-2 px-3 text-white-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href="#">About Us</a>
-            <a class="font-mono block py-2 px-3 text-white-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href="#">Product </a>
-            <a class="font-mono block py-2 px-3 text-white-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href="#">Verticals</a>
-        </nav>
-        </div>
+    <div class="w-full sm:w-auto flex items-end a h-20">
+    <nav class="text-white flex gap-5 absolute right-5 -translate-y-7 -translate-x--10">
+      <Dropdown label="About Us" class='bg-inherit' dismissOnClick={false}>
+        <Dropdown.Item>Submenu 1</Dropdown.Item>
+        <Dropdown.Item>Submenu 2</Dropdown.Item>
+        <Dropdown.Item>Submenu 3</Dropdown.Item>
+      </Dropdown>
+      <Dropdown label="Products" class='bg-inherit'  dismissOnClick={false}>
+        <Dropdown.Item>Submenu 1</Dropdown.Item>
+        <Dropdown.Item>Submenu 2</Dropdown.Item>
+        <Dropdown.Item>Submenu 3</Dropdown.Item>
+      </Dropdown>
+      <Dropdown label="Verticals" class='bg-inherit'  dismissOnClick={false}>
+        <Dropdown.Item >Submenu 1</Dropdown.Item>
+        <Dropdown.Item>Submenu 2</Dropdown.Item>
+        <Dropdown.Item>Submenu 3</Dropdown.Item>
+      </Dropdown>
+    </nav>
+  </div>
   )
   return (
     
