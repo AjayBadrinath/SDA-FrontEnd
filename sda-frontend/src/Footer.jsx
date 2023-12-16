@@ -1,6 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import sdaLogo from './assets/sdalogo.svg'
-import {motion} from 'framer-motion'
+
 import { Link } from "react-router-dom";
 
 /* Boiler Plate obtained from @mui */

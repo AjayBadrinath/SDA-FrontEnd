@@ -5,7 +5,7 @@ import siemenlvs from './assets/lvs/siemenlvs.jpg';
 import lvs from './assets/lvs/lvschneider.jpg'
 import abblvs from './assets/lvs/abblvs.jpg'
 import { Footer } from './Footer';
-import { Outlet, Link } from "react-router-dom";
+
 
  function VFD() {
   const img=[{img:siemenlvs,

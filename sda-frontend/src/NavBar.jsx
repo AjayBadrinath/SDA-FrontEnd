@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import 'tailwindcss/tailwind.css'
-import { motion, useScroll,useAnimation} from "framer-motion";
+import { motion, } from "framer-motion";
 import sdaLogo  from './assets/sdalogo.svg'
 import {useMediaQuery} from 'react-responsive'
 import {FaBars} from 'react-icons/fa'
-import { Ripple, initTE } from "tw-elements";
+
 import { Dropdown } from 'flowbite-react';
 import { Outlet,Link } from 'react-router-dom';
 

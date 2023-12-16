@@ -1,22 +1,16 @@
 import { useState ,useRef,useEffect} from 'react'
-import NavBar from './NavBar'
-import viteLogo from '/vite.svg'
-import sdaLogo  from './assets/sdalogo.svg'
+
 import './App.css'
 import { motion } from "framer-motion"
-import ResponsiveAppBar from './ResponsiveAppBar'
-import { Container, Typography } from '@mui/material'
+
 import Hero1 from './Hero1'
 import { Footer } from './Footer'
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
-import { useReducer } from 'react'
-import ScrollAnim from './ScrollAnim'
-import PanelAnim from './PanelAnim'
+
 const serviceList=["service1","service2","service3"];
-import CarouselImg from './CarouselImg'
+
 import MainMarquee from './MainMarquee'
-import { SectionContext } from './SectionContext'
-import SpeedDialFn from './SpeedDialFn'
+
+
 import React from 'react'
 
 export default function Home() {

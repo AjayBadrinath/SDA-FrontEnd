@@ -1,14 +1,11 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+
 import 'tailwindcss/tailwind.css'
 import { motion } from "framer-motion";
-import sdaLogo  from './assets/sdalogo.svg'
+
 import {  useScroll } from "framer-motion"
-import NavBar from './NavBar';
+
 import ScrollAnim from './ScrollAnim';
-import img1 from  './assets/splc.jpg'
-import zIndex from '@mui/material/styles/zIndex';
+
 import CarouselImg from './CarouselImg'
 import automation from './assets/automation.png';
 import Fb from './assets/F&b.png'
