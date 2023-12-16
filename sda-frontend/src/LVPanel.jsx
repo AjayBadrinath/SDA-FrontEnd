@@ -17,11 +17,11 @@ import lp from './assets/mcc.jpg'
 
 </div>
 <div className='mt-10'></div>
-<hr></hr>
+
+ </div>
+ <hr></hr>
 
 <Footer/>
- </div>
- 
 </>
   )
 }

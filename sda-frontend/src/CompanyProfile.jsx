@@ -6,7 +6,7 @@ import { Footer } from './Footer';
 
   return (
     <>
-        <div className=' h-screen flex flex-col  mt-40 z-0 justify-center text-xl sm:text-3xl text-white text-center font-extrabold'>
+            <div className=' h-screen flex flex-col  mt-40 z-0 justify-center text-xl sm:text-3xl text-white text-center font-extrabold'>
         <h2 className='mt-5 text-align: center'>Company Profile </h2>
        <div className='mt-10'></div>
        
@@ -17,12 +17,13 @@ import { Footer } from './Footer';
         
 
 </div>
-<div className='mt-10'></div>
-<hr></hr>
+
+
+
+ </div>
+ <hr></hr>
 
 <Footer/>
- </div>
- 
 </>
   )
 }

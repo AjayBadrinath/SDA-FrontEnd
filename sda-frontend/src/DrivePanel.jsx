@@ -17,11 +17,11 @@ import dp from './assets/dp.jpg'
 
 </div>
 <div className='mt-10'></div>
-<hr></hr>
+
+ </div>
+ <hr></hr>
 
 <Footer/>
- </div>
- 
 </>
   )
 }
