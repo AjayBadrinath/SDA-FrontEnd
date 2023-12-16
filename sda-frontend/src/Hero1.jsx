@@ -48,9 +48,9 @@ const scrollToNextSection = () => {
     return(
         
        
-        <div className=' h-screen  ' >
+        <div className='z-100 h-screen  ' >
               
-<section class=" flex  h-screen  flex-col z-0 " 
+<section class=" flex  h-screen  flex-col z-100 " 
    >
     <video autoPlay loop muted className="absolute w-screen h-screen z-100 opacity-40 object-cover  ">
           <source src={video} type="video/mp4" />
@@ -61,9 +61,9 @@ const scrollToNextSection = () => {
   animate={{ y: 100 }}
   transition={{ duration: 2 }} >
 
-<div class="text-center display: block  text-emerald-900	 z-0 p-5  ">
+<div class="text-center display: block  text-emerald-900	 z-100 p-5  ">
 
-    <h1 class="text-2xl sm:text-7xl text-center font-extrabold z-0  ">
+    <h1 class="text-2xl sm:text-7xl text-center font-extrabold z-100  ">
         Smart Drives Automation 
     </h1>
     <p class="font-mono text-3xl mt-5 ">
