@@ -125,7 +125,7 @@ const scrollToNextSection = () => {
   animate={{ y: 100 }}
   transition={{ duration: 2 }} >
 
-<CarouselImg img={img}/>
+<CarouselImg img={img} h={650} x={250}/>
 </motion.div>
 
 </div>

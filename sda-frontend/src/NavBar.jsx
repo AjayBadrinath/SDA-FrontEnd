@@ -21,20 +21,19 @@ export default function NavBar() {
   const menu=(
     <div class="w-full sm:w-auto flex items-end a h-20">
     <nav class="text-white flex gap-5 absolute right-5 -translate-y-7 -translate-x--10">
-      <Dropdown label="About Us" class='bg-inherit' dismissOnClick={false}>
-        <Dropdown.Item>Submenu 1</Dropdown.Item>
-        <Dropdown.Item>Submenu 2</Dropdown.Item>
-        <Dropdown.Item>Submenu 3</Dropdown.Item>
+      <Dropdown label="About Us" class='bg-inherit' dismissOnClick={true}>
+      <Dropdown.Item>Company Profile</Dropdown.Item>
+      <Dropdown.Item>Blogs</Dropdown.Item>
       </Dropdown>
-      <Dropdown label="Products" class='bg-inherit'  dismissOnClick={false}>
-        <Dropdown.Item>Submenu 1</Dropdown.Item>
-        <Dropdown.Item>Submenu 2</Dropdown.Item>
-        <Dropdown.Item>Submenu 3</Dropdown.Item>
+      <Dropdown label="Products" class='bg-inherit'  dismissOnClick={true}>
+        <Dropdown.Item>LV SwitchGear</Dropdown.Item>
+        <Dropdown.Item>Enclosures</Dropdown.Item>
+        <Dropdown.Item>Automation&Control</Dropdown.Item>
       </Dropdown>
-      <Dropdown label="Verticals" class='bg-inherit'  dismissOnClick={false}>
-        <Dropdown.Item >Submenu 1</Dropdown.Item>
-        <Dropdown.Item>Submenu 2</Dropdown.Item>
-        <Dropdown.Item>Submenu 3</Dropdown.Item>
+      <Dropdown label="Solutions" class='bg-inherit'  dismissOnClick={false}>
+        <Dropdown.Item >Control Panels</Dropdown.Item>
+        <Dropdown.Item>LV Panels</Dropdown.Item>
+        <Dropdown.Item>Drive Panels</Dropdown.Item>
       </Dropdown>
     </nav>
   </div>

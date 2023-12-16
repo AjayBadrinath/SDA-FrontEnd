@@ -18,10 +18,12 @@ import MainMarquee from './MainMarquee'
 import { SectionContext } from './SectionContext'
 import SpeedDialFn from './SpeedDialFn'
 import VFD from './VFD'
+import AutoCntl from './AutoCntl'
+import Panel from './Panel'
 function App() {
   
    const se2=useRef(null);
-  /*
+  
   return (
   //<Hero logo={sdaLogo}/>
   
@@ -130,14 +132,18 @@ essence of this is the following:
     
    
    
-  )*/
+  )
+  
+ /*
   return(
    <>
    <NavBar/>
 
-   <VFD/>
+   <Panel/>
    </>
   )
+  */
+  
 }
 
 export default App

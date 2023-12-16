@@ -1,5 +1,6 @@
 import { Typography } from "@material-tailwind/react";
- 
+import sdaLogo from './assets/sdalogo.svg'
+import {motion} from 'framer-motion'
 const LINKS = [
   {
     title: "Product",
@@ -22,9 +23,10 @@ export function Footer() {
     <footer className="relative w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6">
+          <Typography variant="h5" className="mb-6 text-3xl">
             Smart Drives Automation
           </Typography>
+          
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
