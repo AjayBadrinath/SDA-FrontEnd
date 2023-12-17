@@ -1,11 +1,16 @@
 import React from 'react'
 import { Footer } from './Footer';
+import {motion} from 'framer-motion'
 import dp from './assets/dp.jpg'
  function DrivePanel() {
 
   return (
     <>
-        <div className=' h-screen flex flex-col  mt-40 z-0 justify-center text-xl sm:text-3xl text-white text-center font-extrabold'>
+        <div 
+        
+        className=' h-screen flex flex-col  mt-40 z-0 justify-center text-xl sm:text-3xl text-white text-center font-extrabold'
+        
+        transition={{ duration: 1 }}>
         <h2 className='mt-5 text-align: center'>Drive Panels</h2>
        <div className='mt-10'></div>
        
