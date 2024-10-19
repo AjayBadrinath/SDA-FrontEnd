@@ -18,11 +18,7 @@ export default function MainMarquee() {
    onHoverStart={e => {}}
    onHoverEnd={e => {}}
    /></a>
-   <a href="https://www.bharatbijlee.com/"><motion.img src={BB} className='h-20 m-10 w-30'
-   whileHover={{ scale: 1.5}}
-   onHoverStart={e => {}}
-   onHoverEnd={e => {}}
-   /></a>
+   
    </Marquee>
 
 </motion.div>
