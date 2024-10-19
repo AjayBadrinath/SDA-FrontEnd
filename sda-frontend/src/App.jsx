@@ -11,6 +11,8 @@ import DrivePanel from './DrivePanel';
 import LVPanel from './LVPanel';
 import ContactUs from './ContactUs';
 import Submitted from './Submitted';
+import ChatBot from './ChatBot';
+
 function App() {
 
   
@@ -26,6 +28,10 @@ function App() {
         <Route path="enclosures" element={<Panel />}>
           
         </Route>
+        <Route path="Chat" element={<ChatBot />}>
+          
+        </Route>
+        
         <Route path="automationcontrol" element={<AutoCntl />}>
           
         </Route>

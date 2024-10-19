@@ -12,6 +12,7 @@ import MainMarquee from './MainMarquee'
 
 
 import React from 'react'
+import ChatBot from './ChatBot'
 
 export default function Home() {
     const se2=useRef(null);
@@ -19,7 +20,7 @@ export default function Home() {
     //<Hero logo={sdaLogo}/>
   
   <div className ='d1 z-100'>
-  < div className='  flex  flex-col  w-full z-100 '  >
+  < div className='  flex  flex-col  w-full z-1000 '  >
    
    
   
@@ -29,7 +30,7 @@ export default function Home() {
     <MainMarquee/>
  
     <Hero1/>
-    
+    <ChatBot/>
     <div className=' h-screen '>
        
     <section ref={se2} className=" z-0 h-screen flex  justify-center bg-black" >
@@ -39,6 +40,7 @@ export default function Home() {
    initial={{ y: 500 }} 
    animate={{ y: 100 }}
    transition={{ duration: 2 }} >
+    
  
  <div class="text-center display: block  text-black	 z-0 p-2  ">
  
@@ -79,9 +81,9 @@ export default function Home() {
    animate={{ y: 100 }}
    transition={{ duration: 2 }} >
  
- <div class="text-center display: block  text-black	 z-0 p-2  ">
+ <div class="text-center display: block  text-black	 z-auto p-2  ">
  
- <h1 class="text-xl sm:text-xl text-center font-extrabold z-0  ">
+ <h1 class="text-xl sm:text-xl text-center font-extrabold z-auto  ">
          Why SDA?
      </h1>
      <p class="font-mono text-3xl mt-5 ">
@@ -101,6 +103,7 @@ export default function Home() {
        Be driven by customer requirements.
        </li>
      </ul>
+     
  
  
  </div>
